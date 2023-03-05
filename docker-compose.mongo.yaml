@@ -1,0 +1,8 @@
+    mongo:
+      container_name: mongo
+      image: mongo:latest
+      command: mongod
+      ports:
+        - "27017:27017"
+      volumes:
+        - .docker/data/mongo:/data/db
