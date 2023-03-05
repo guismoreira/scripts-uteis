@@ -1,8 +1,14 @@
-    mongo:
-      container_name: mongo
-      image: mongo:latest
-      command: mongod
-      ports:
-        - "27017:27017"
-      volumes:
-        - .docker/data/mongo:/data/db
+version: '3.1'
+services:
+  mongodb:
+    container_name: database-mongodb
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: database
+      MONGO_INITDB_ROOT_PASSWORD: database
+      MONGO_INITDB_DATABASE: database
+    volumes:
+      - "${HOME}/mongo_data:/data/db"
+    ports:
+      - "27017:27017"
