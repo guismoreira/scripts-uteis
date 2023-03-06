@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install openjdk-17-jdk openjdk-17-jre -y
+sudo apt install openjdk-17-jre-headless -y
 
 wget wget https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bin.tar.gz
 
