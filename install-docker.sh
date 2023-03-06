@@ -16,6 +16,7 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 sudo usermod -aG docker $USER
+sudo reboot
 
 # as linhas abaixo serão úteis no wsl
 # nano ~/.bashrc
