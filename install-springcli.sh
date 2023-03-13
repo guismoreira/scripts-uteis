@@ -8,3 +8,4 @@ sdk install springboot
 
 echo 'alias spring-api="spring init --build=maven --java-version=17 --dependencies=web,h2,jdbc,lombok,data-jpa"' >> ~/.bashrc
 echo 'alias sprun="spring-boot:run"' >> ~/.bashrc
+source ~/.bashrc
