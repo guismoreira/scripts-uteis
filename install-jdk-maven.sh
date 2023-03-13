@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt install unzip zip -y
 sudo apt install curl -y
 curl -s https://get.sdkman.io | bash
